@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
+import 'package:page_view/obey_logo_page.dart';
 
 class sign_up_detail extends StatefulWidget {
   const sign_up_detail({Key? key}) : super(key: key);
@@ -36,7 +37,7 @@ class _sign_up_detailState extends State<sign_up_detail> {
                   height: 10,
                 ),
                 Text(
-                  'Crate an  account with  new phone number',
+                  'Crate an  account with  new the phone number',
                   style: TextStyle(fontSize: 15),
                 ),
                 SizedBox(
@@ -101,7 +102,11 @@ class _sign_up_detailState extends State<sign_up_detail> {
                     ),
                     minimumSize: const Size(320, 60),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => obeyLogoPage()),
+                    );
+                  },
                   child: const Text(
                     'Save & Continue',
                     style: const TextStyle(fontSize: 20),
