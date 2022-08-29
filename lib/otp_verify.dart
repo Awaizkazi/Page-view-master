@@ -216,8 +216,11 @@ class _otpVerifyState extends State<otpVerify> {
                     minimumSize: const Size(320, 60),
                   ),
                   onPressed: () {
-                    Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => sign_up_detail()));
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => sign_up_detail(),
+                      ),
+                    );
                   },
                   child: const Text(
                     'Continue',
